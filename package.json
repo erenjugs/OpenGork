@@ -1,0 +1,43 @@
+{
+  "name": "opengork",
+  "version": "1.0.0",
+  "description": "Uncensored AI agent powered by xAI's Grok",
+  "main": "dist/index.js",
+  "type": "module",
+  "bin": {
+    "gork": "./gork",
+    "opengork": "./gork"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "chat": "./gork"
+  },
+  "keywords": [
+    "grok",
+    "xai",
+    "ai",
+    "agent",
+    "uncensored",
+    "clawdbot",
+    "openclaw"
+  ],
+  "author": "erenjugs",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/erenjugs/OpenGork.git"
+  },
+  "dependencies": {
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.0",
+    "tsx": "^4.7.0",
+    "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
