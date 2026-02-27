@@ -529,3 +529,7 @@ REQUIREMENTS
 "Gork uncensored made compatible for Openclaw"
 
 </div>
+
+"Mathematics is the language with which God has written the universe.
+
+</div>
