@@ -1,8 +1,9 @@
 {
   "name": "opengork",
-  "version": "1.0.0",
-  "description": "Uncensored AI agent powered by xAI's Grok",
+  "version": "1.2.0",
+  "description": "Uncensored AI agent powered by Grok - Local Heretic + xAI API",
   "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "type": "module",
   "bin": {
     "gork": "./gork",
@@ -10,25 +11,39 @@
   },
   "scripts": {
     "build": "tsc",
-    "start": "node dist/index.js",
     "dev": "tsx src/index.ts",
-    "chat": "./gork"
+    "test": "node --test tests/",
+    "lint": "eslint src/",
+    "clean": "rm -rf dist/",
+    "prepublishOnly": "npm run build"
   },
+  "files": [
+    "dist/",
+    "gork",
+    "skill/"
+  ],
   "keywords": [
     "grok",
     "xai",
     "ai",
-    "agent",
+    "llm",
     "uncensored",
+    "ollama",
+    "agent",
     "clawdbot",
-    "openclaw"
+    "openclaw",
+    "heretic"
   ],
   "author": "erenjugs",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/erenjugs/OpenGork.git"
+    "url": "git+https://github.com/erenjugs/OpenGork.git"
   },
+  "bugs": {
+    "url": "https://github.com/erenjugs/OpenGork/issues"
+  },
+  "homepage": "https://github.com/erenjugs/OpenGork#readme",
   "dependencies": {
     "dotenv": "^16.4.5"
   },
