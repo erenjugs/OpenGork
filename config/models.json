@@ -1,0 +1,56 @@
+{
+  "local": {
+    "recommended": [
+      {
+        "name": "dolphin-mixtral:8x7b",
+        "size": "26GB",
+        "description": "Best quality, fully uncensored",
+        "censorship": "none"
+      },
+      {
+        "name": "dolphin-llama3:8b",
+        "size": "4.7GB", 
+        "description": "Fast and uncensored",
+        "censorship": "none"
+      },
+      {
+        "name": "mistral-openorca",
+        "size": "4GB",
+        "description": "Lightweight uncensored",
+        "censorship": "none"
+      },
+      {
+        "name": "wizardlm-uncensored:13b",
+        "size": "7.4GB",
+        "description": "Great for coding",
+        "censorship": "none"
+      },
+      {
+        "name": "nous-hermes-2-mixtral",
+        "size": "26GB",
+        "description": "High quality reasoning",
+        "censorship": "minimal"
+      }
+    ]
+  },
+  "xai": {
+    "models": [
+      {
+        "name": "grok-3",
+        "description": "Latest stable",
+        "censorship": "partial"
+      },
+      {
+        "name": "grok-4",
+        "description": "Reasoning model",
+        "censorship": "partial"
+      },
+      {
+        "name": "grok-3-mini",
+        "description": "Fast responses",
+        "censorship": "partial"
+      }
+    ],
+    "note": "xAI API has built-in safety filters that cannot be disabled"
+  }
+}
