@@ -525,3 +525,7 @@ REQUIREMENTS
 
 ----Pushed updates
 </div>
+
+"Gork uncensored made compatible for Openclaw"
+
+</div>
