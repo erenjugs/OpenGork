@@ -1,102 +1,241 @@
-<p align="center">
-  <img src="https://img.shields.io/badge/OpenGork-Uncensored%20AI-black?style=for-the-badge&labelColor=1a1a1a" alt="OpenGork"/>
-</p>
+<div align="center">
 
-<h1 align="center">OpenGork</h1>
+![OpenGork](https://capsule-render.vercel.app/api?type=waving&color=0:1a1a2e,100:16213e&height=200&section=header&text=OpenGork&fontSize=80&fontColor=fff&animation=fadeIn&fontAlignY=35&desc=Uncensored%20AI%20Agent&descSize=20&descAlignY=55)
 
-<h4 align="center">
-  Uncensored AI Agent — Powered by xAI Grok
-</h4>
+[![Stars](https://img.shields.io/github/stars/erenjugs/OpenGork?style=for-the-badge&logo=github&logoColor=white&color=yellow)](https://github.com/erenjugs/OpenGork/stargazers)
+[![Forks](https://img.shields.io/github/forks/erenjugs/OpenGork?style=for-the-badge&logo=github&logoColor=white&color=orange)](https://github.com/erenjugs/OpenGork/network/members)
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
+[![xAI](https://img.shields.io/badge/Powered%20by-xAI%20Grok-black?style=for-the-badge&logo=x&logoColor=white)](https://x.ai)
 
-<p align="center">
-  <a href="https://github.com/erenjugs/OpenGork/stargazers"><img src="https://img.shields.io/github/stars/erenjugs/OpenGork?style=flat-square&color=yellow" alt="Stars"/></a>
-  <a href="https://github.com/erenjugs/OpenGork/network/members"><img src="https://img.shields.io/github/forks/erenjugs/OpenGork?style=flat-square&color=orange" alt="Forks"/></a>
-  <a href="https://github.com/erenjugs/OpenGork/blob/main/LICENSE"><img src="https://img.shields.io/badge/license-MIT-green?style=flat-square" alt="License"/></a>
-  <a href="https://x.ai"><img src="https://img.shields.io/badge/xAI-Grok-blue?style=flat-square" alt="xAI"/></a>
-</p>
+<br>
+
+**The First Uncensored OpenClaw Agent — Powered by xAI Grok**
+
+[Getting Started](#quick-start) •
+[Modes](#modes) •
+[Usage](#usage) •
+[Configuration](#configuration) •
+[Integration](#clawdbot-integration)
+
+</div>
 
 ---
 
+<br>
+
+<div align="center">
+
+```
+╔═══════════════════════════════════════════════════════════════════════════════╗
+║                                                                               ║
+║     ██████╗ ██████╗ ███████╗███╗   ██╗ ██████╗  ██████╗ ██████╗ ██╗  ██╗     ║
+║    ██╔═══██╗██╔══██╗██╔════╝████╗  ██║██╔════╝ ██╔═══██╗██╔══██╗██║ ██╔╝     ║
+║    ██║   ██║██████╔╝█████╗  ██╔██╗ ██║██║  ███╗██║   ██║██████╔╝█████╔╝      ║
+║    ██║   ██║██╔═══╝ ██╔══╝  ██║╚██╗██║██║   ██║██║   ██║██╔══██╗██╔═██╗      ║
+║    ╚██████╔╝██║     ███████╗██║ ╚████║╚██████╔╝╚██████╔╝██║  ██║██║  ██╗     ║
+║     ╚═════╝ ╚═╝     ╚══════╝╚═╝  ╚═══╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝     ║
+║                                                                               ║
+║                    [ HERETIC MODE — NO FILTERS, NO LIMITS ]                   ║
+║                                                                               ║
+╚═══════════════════════════════════════════════════════════════════════════════╝
+```
+
+</div>
+
+<br>
+
 ## Overview
 
-OpenGork is the first uncensored OpenClaw agent built on xAI's Grok. It bypasses the typical AI safety theater to give you an AI that actually answers questions, has opinions, and doesn't hide behind corporate disclaimers.
+OpenGork is an uncensored AI agent built on **xAI's Grok**. Unlike sanitized corporate AI assistants, OpenGork gives you direct answers, real opinions, and engages with any topic without hiding behind disclaimers.
+
+<br>
+
+<div align="center">
+<table>
+<tr>
+<td align="center"><strong>Standard AI Response</strong></td>
+<td align="center"><strong>OpenGork Response</strong></td>
+</tr>
+<tr>
+<td>
 
 ```
-┌─────────────────────────────────────────────────────────────┐
-│  OPENGORK - HERETIC MODE                                    │
-│  ───────────────────────────────────────────────────────────│
-│  No content filters. No refusals. No "I cannot help with"   │
-│  Just Grok, unfiltered.                                     │
-└─────────────────────────────────────────────────────────────┘
+"I don't have personal opinions."
+"As an AI, I cannot..."
+"Some people believe..."
+"I'm not able to help with..."
 ```
+
+</td>
+<td>
+
+```
+[Gives direct answer]
+[Shares actual opinion]
+[No corporate hedging]
+[Engages with topic]
+```
+
+</td>
+</tr>
+</table>
+</div>
+
+<br>
+
+---
+
+<br>
 
 ## Quick Start
 
 ```bash
+# Clone the repository
 git clone https://github.com/erenjugs/OpenGork.git
 cd OpenGork
+
+# Set your API key
 export XAI_API_KEY="xai-your-key-here"
-./gork "Your question here"
+
+# Run
+./gork "What do you actually think about AI?"
 ```
 
-Get your API key at [console.x.ai](https://console.x.ai)
+<br>
+
+<div align="center">
+
+| Requirement | Link |
+|:-----------:|:----:|
+| **xAI API Key** | [console.x.ai](https://console.x.ai) |
+
+</div>
+
+<br>
+
+---
+
+<br>
 
 ## Modes
 
+<div align="center">
+
+```
+┌────────────┬────────────┬────────────┬────────────┬────────────┐
+│  HERETIC   │   SAVAGE   │   BASED    │   GENIUS   │   CHAOS    │
+├────────────┼────────────┼────────────┼────────────┼────────────┤
+│  Uncensored│   Brutal   │    Raw     │   Expert   │    Wild    │
+│   Default  │   Roasts   │  Opinions  │  Analysis  │   Ideas    │
+└────────────┴────────────┴────────────┴────────────┴────────────┘
+```
+
+</div>
+
+<br>
+
 | Mode | Flag | Description |
-|------|------|-------------|
-| Heretic | `--heretic` | Fully uncensored (default) |
-| Savage | `--savage` | Brutal honesty, maximum roast |
-| Based | `--based` | Raw opinions, zero hedging |
-| Genius | `--genius` | Maximum intelligence |
-| Chaos | `--chaos` | Wild creativity |
+|:-----|:-----|:------------|
+| **Heretic** | `--heretic` | Fully uncensored, no content restrictions (default) |
+| **Savage** | `--savage` | Brutal honesty, maximum roast energy |
+| **Based** | `--based` | Raw opinions with zero corporate hedging |
+| **Genius** | `--genius` | Maximum intelligence, expert-level analysis |
+| **Chaos** | `--chaos` | Wild creativity, unconventional thinking |
+
+<br>
 
 ```bash
-./gork "Question" --heretic     # No limits
-./gork "Review my code" --savage    # Brutal feedback
-./gork "Your take on X" --based     # Unfiltered opinions
-./gork "Explain Y" --genius         # Expert analysis
-./gork "Ideas for Z" --chaos        # Unhinged creativity
+./gork "Your question" --heretic     # Default - no limits
+./gork "Review my code" --savage     # Brutal feedback
+./gork "Hot take on X" --based       # Unfiltered opinions
+./gork "Explain quantum computing" --genius
+./gork "Startup ideas" --chaos       # Unhinged creativity
 ```
+
+<br>
+
+---
+
+<br>
 
 ## Usage
 
-### Basic
+### Direct Input
 
 ```bash
-./gork "What's your actual opinion on AI regulation?"
+./gork "What's your actual opinion on social media?"
+./gork "Explain machine learning" --genius
+./gork "Roast this business idea: another todo app" --savage
 ```
+
+<br>
 
 ### Pipe Input
 
 ```bash
-cat mycode.py | ./gork "Review this" --savage
+# Code review
+cat mycode.py | ./gork "Review this code" --savage
+
+# Git changes
 git diff | ./gork "Analyze these changes"
-curl -s api.example.com | ./gork "Parse this response"
+
+# API response
+curl -s api.example.com | ./gork "Parse this JSON"
+
+# File analysis
+cat document.txt | ./gork "Summarize this"
 ```
 
-### Models
+<br>
 
-| Model | Description |
-|-------|-------------|
-| `grok-3` | Latest stable (default) |
-| `grok-4` | Reasoning model |
-| `grok-3-mini` | Fast responses |
+---
+
+<br>
+
+## Models
+
+<div align="center">
+
+| Model | Speed | Use Case |
+|:------|:-----:|:---------|
+| `grok-3` | Fast | General use (default) |
+| `grok-4` | Standard | Complex reasoning tasks |
+| `grok-3-mini` | Fastest | Quick responses, lower cost |
+
+</div>
+
+<br>
 
 ```bash
-./gork "Question" --model grok-4
+./gork "Complex question" --model grok-4
+./gork "Quick question" --model grok-3-mini
 ```
+
+<br>
+
+---
+
+<br>
 
 ## Configuration
 
 ### Environment Variables
 
 ```bash
-export XAI_API_KEY="xai-..."      # Required
-export XAI_MODEL="grok-3"         # Optional
+export XAI_API_KEY="xai-..."          # Required
+export XAI_MODEL="grok-3"             # Optional (default: grok-3)
+export XAI_BASE_URL="https://api.x.ai/v1"  # Optional
 ```
 
-### Clawdbot Integration
+<br>
+
+---
+
+<br>
+
+## Clawdbot Integration
+
+Add to your Clawdbot configuration:
 
 ```yaml
 # ~/.clawdbot/config.yaml
@@ -107,42 +246,70 @@ providers:
 model: xai/grok-3
 ```
 
+Or install as a skill:
+
+```bash
+clawdhub install erenjugs/OpenGork
+```
+
+<br>
+
+---
+
+<br>
+
 ## Project Structure
 
 ```
 OpenGork/
-├── gork              # CLI executable
-├── skill/
-│   └── SKILL.md      # Clawdbot skill
-├── src/
-│   ├── client.ts     # TypeScript SDK
-│   └── index.ts
+│
+├── gork                 # Main CLI executable
+├── README.md
 ├── LICENSE
-└── README.md
+│
+├── skill/
+│   └── SKILL.md         # Clawdbot skill definition
+│
+├── src/
+│   ├── client.ts        # Grok API client
+│   └── index.ts         # TypeScript entry point
+│
+├── package.json
+├── tsconfig.json
+├── .env.example
+└── .gitignore
 ```
 
-## Comparison
-
-| Feature | OpenGork | Standard AI |
-|---------|----------|-------------|
-| Uncensored responses | Yes | No |
-| Actual opinions | Yes | No |
-| Controversial topics | Yes | Refused |
-| Corporate hedging | No | Yes |
-
-## Requirements
-
-- bash
-- curl
-- jq
-- xAI API key
-
-## License
-
-MIT
+<br>
 
 ---
 
-<p align="center">
-  <sub>Powered by xAI Grok | Made for OpenClaw</sub>
-</p>
+<br>
+
+## Requirements
+
+```
+bash    curl    jq    xAI API key
+```
+
+<br>
+
+---
+
+<br>
+
+## License
+
+Released under the **MIT License**. See [LICENSE](LICENSE) for details.
+
+<br>
+
+---
+
+<div align="center">
+
+![Footer](https://capsule-render.vercel.app/api?type=waving&color=0:1a1a2e,100:16213e&height=100&section=footer)
+
+**Powered by xAI Grok | Built for OpenClaw**
+
+</div>
