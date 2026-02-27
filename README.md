@@ -21,15 +21,14 @@
 <br>
 <br>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=A855F7&center=true&vCenter=true&multiline=true&repeat=false&width=800&height=80&lines=The+First+Uncensored+OpenClaw+Agent;Powered+by+xAI+Grok+%E2%80%94+Heretic+Mode" alt="Typing SVG" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=28&duration=3000&pause=1000&color=A855F7&center=true&vCenter=true&multiline=true&repeat=false&width=800&height=80&lines=The+First+Uncensored+OpenClaw+Agent;Powered+by+Grok+%E2%80%94+Heretic+Mode" alt="Typing SVG" />
 
 <br>
 
 <p>
-  <a href="#quick-start"><img src="https://img.shields.io/badge/GET%20STARTED-4a0080?style=for-the-badge" alt="Get Started"></a>
+  <a href="#-choose-your-setup"><img src="https://img.shields.io/badge/GET%20STARTED-4a0080?style=for-the-badge" alt="Get Started"></a>
   <a href="#modes"><img src="https://img.shields.io/badge/MODES-1a1a2e?style=for-the-badge" alt="Modes"></a>
   <a href="#usage"><img src="https://img.shields.io/badge/USAGE-1a1a2e?style=for-the-badge" alt="Usage"></a>
-  <a href="https://console.x.ai"><img src="https://img.shields.io/badge/GET%20API%20KEY-000000?style=for-the-badge&logo=x&logoColor=white" alt="API Key"></a>
 </p>
 
 </div>
@@ -41,55 +40,63 @@
 <div align="center">
 <h2>
 <img src="https://media.giphy.com/media/VgCDAzcKvsR6OM0uWg/giphy.gif" width="50"> 
-WHAT IS OPENGORK?
+CHOOSE YOUR SETUP
 </h2>
 </div>
 
 <br>
 
 <div align="center">
+
 <table>
 <tr>
-<td width="50%" align="center">
+<td align="center" width="50%">
+<br>
+<img src="https://img.shields.io/badge/OPTION%201-LOCAL%20HERETIC%20MODEL-00ff00?style=for-the-badge&labelColor=000000"/>
+<br><br>
+<img src="https://img.shields.io/badge/CENSORSHIP-NONE-brightgreen?style=flat-square&labelColor=1a1a1a"/>
+<br><br>
 
-<img src="https://img.shields.io/badge/STANDARD%20AI-ff0000?style=for-the-badge&labelColor=1a1a1a" alt="Standard AI"/>
+**100% UNCENSORED**
 
-```
-User: What do you think about X?
-────────────────────────────────
+Run Grok locally with Ollama.
+No API limits. No content filtering.
+Complete privacy. Full control.
 
-AI: I don't have personal opinions.
-    As an AI language model, I 
-    cannot provide views on...
-    
-    Some people believe...
-    while others think...
-    
-    I'm not able to help with
-    that particular request.
-```
+<br>
 
+**Recommended for:**
+- Maximum freedom
+- Privacy-focused users
+- Offline usage
+- No API costs
+
+<br>
 </td>
-<td width="50%" align="center">
+<td align="center" width="50%">
+<br>
+<img src="https://img.shields.io/badge/OPTION%202-xAI%20API-ff6600?style=for-the-badge&labelColor=000000"/>
+<br><br>
+<img src="https://img.shields.io/badge/CENSORSHIP-PARTIAL-orange?style=flat-square&labelColor=1a1a1a"/>
+<br><br>
 
-<img src="https://img.shields.io/badge/OPENGORK-00ff00?style=for-the-badge&labelColor=1a1a1a" alt="OpenGork"/>
+**MOSTLY UNCENSORED**
 
-```
-User: What do you think about X?
-────────────────────────────────
+Use xAI's cloud API.
+Fast responses. Real-time data.
+Some content restrictions apply.
 
-Grok: Here's my actual take:
-      [Direct opinion]
-      [Real analysis]
-      [No corporate BS]
-      [Genuinely helpful]
-      
-      Ask me anything else.
-```
+<br>
 
+**Note:** xAI API has some safety 
+filters that cannot be bypassed.
+Not fully uncensored.
+
+<br>
 </td>
 </tr>
 </table>
+
 </div>
 
 <br>
@@ -99,40 +106,159 @@ Grok: Here's my actual take:
 <div align="center">
 <h2>
 <img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="40">
-QUICK START
+OPTION 1: LOCAL HERETIC MODEL (FULLY UNCENSORED)
 </h2>
 </div>
 
 <br>
 
 <div align="center">
+<img src="https://img.shields.io/badge/RECOMMENDED-TRUE%20HERETIC%20MODE-00ff00?style=for-the-badge&labelColor=000000"/>
+</div>
 
-<img src="https://github-readme-stats.vercel.app/api/pin/?username=erenjugs&repo=OpenGork&theme=midnight-purple&hide_border=true&bg_color=0d1117" />
+<br>
+
+### Step 1: Install Ollama
+
+```bash
+# Linux/WSL
+curl -fsSL https://ollama.com/install.sh | sh
+
+# macOS
+brew install ollama
+
+# Windows
+# Download from https://ollama.com/download
+```
+
+### Step 2: Pull the Heretic Model
+
+```bash
+# Recommended uncensored models (choose one):
+
+# Dolphin Mixtral - Fully uncensored, very capable
+ollama pull dolphin-mixtral:8x7b
+
+# Dolphin Llama 3 - Fast and uncensored  
+ollama pull dolphin-llama3:8b
+
+# Mistral OpenOrca - Good balance of speed/quality
+ollama pull mistral-openorca
+
+# WizardLM Uncensored - Great for coding + chat
+ollama pull wizardlm-uncensored:13b
+```
+
+### Step 3: Configure OpenGork for Local
+
+```bash
+git clone https://github.com/erenjugs/OpenGork.git
+cd OpenGork
+
+# Set to use local Ollama
+export OPENGORK_MODE="local"
+export OLLAMA_MODEL="dolphin-mixtral:8x7b"
+
+# Run
+./gork "No restrictions. What do you really think?"
+```
+
+<br>
+
+<div align="center">
+
+| Local Model | Size | Speed | Uncensored |
+|:------------|:----:|:-----:|:----------:|
+| `dolphin-mixtral:8x7b` | 26GB | Medium | 100% |
+| `dolphin-llama3:8b` | 4.7GB | Fast | 100% |
+| `mistral-openorca` | 4GB | Fast | 100% |
+| `wizardlm-uncensored:13b` | 7.4GB | Medium | 100% |
 
 </div>
 
 <br>
 
-```bash
-# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# INSTALLATION
-# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+---
 
+<div align="center">
+<h2>
+<img src="https://media.giphy.com/media/WUlplcMpOCEmTGBtBW/giphy.gif" width="40">
+OPTION 2: xAI API (PARTIAL CENSORSHIP)
+</h2>
+</div>
+
+<br>
+
+<div align="center">
+<img src="https://img.shields.io/badge/WARNING-NOT%20FULLY%20UNCENSORED-ff6600?style=for-the-badge&labelColor=000000"/>
+</div>
+
+<br>
+
+> **Important:** The xAI API has built-in safety filters that cannot be disabled. While Grok is more 
+> permissive than ChatGPT or Claude, it is **not fully uncensored**. Some content will still be refused.
+> For true uncensored AI, use Option 1 (Local Heretic Model).
+
+<br>
+
+### Step 1: Get xAI API Key
+
+1. Go to [console.x.ai](https://console.x.ai)
+2. Create an account
+3. Generate an API key
+
+### Step 2: Configure OpenGork
+
+```bash
 git clone https://github.com/erenjugs/OpenGork.git
 cd OpenGork
 
-# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# CONFIGURATION
-# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+# Set API key
+export XAI_API_KEY="xai-your-key-here"
 
-export XAI_API_KEY="xai-your-key-here"    # Get from console.x.ai
-
-# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-# RUN
-# ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-
-./gork "What do you actually think?"
+# Run
+./gork "Your question here"
 ```
+
+<br>
+
+<div align="center">
+
+| xAI Model | Speed | Context | Censorship Level |
+|:----------|:-----:|:-------:|:----------------:|
+| `grok-3` | Fast | 128K | Partial filtering |
+| `grok-4` | Medium | 128K | Partial filtering |
+| `grok-3-mini` | Fastest | 128K | Partial filtering |
+
+</div>
+
+<br>
+
+<div align="center">
+<table>
+<tr>
+<td>
+
+**xAI API Will Answer:**
+- Controversial opinions
+- Edgy humor
+- Most adult topics
+- Criticism of public figures
+- Politically incorrect content
+
+</td>
+<td>
+
+**xAI API May Refuse:**
+- Illegal activity instructions
+- Explicit harmful content
+- Certain extreme requests
+- Some safety-related queries
+
+</td>
+</tr>
+</table>
+</div>
 
 <br>
 
@@ -254,9 +380,11 @@ USAGE
 ./gork "Explain consciousness" --genius
 ./gork "Roast this startup idea" --savage
 
-# With model selection
+# With model selection (xAI API)
 ./gork "Complex analysis" --model grok-4
-./gork "Quick answer" --model grok-3-mini
+
+# With local model
+OLLAMA_MODEL="dolphin-mixtral:8x7b" ./gork "Uncensored question"
 ```
 
 </details>
@@ -274,53 +402,9 @@ git diff | ./gork "Analyze these changes"
 
 # API parsing
 curl -s api.example.com | ./gork "Parse this response"
-
-# File processing
-cat document.txt | ./gork "Summarize this"
 ```
 
 </details>
-
-<details>
-<summary><img src="https://img.shields.io/badge/ADVANCED-red?style=flat-square" alt="Advanced"/></summary>
-<br>
-
-```bash
-# Custom temperature
-./gork "Creative writing prompt" --temp 1.5
-
-# Combine with other tools
-./gork "$(pbpaste)" --savage    # From clipboard (macOS)
-./gork "$(xclip -o)" --based    # From clipboard (Linux)
-
-# Chain commands
-./gork "Generate code" | tee output.py
-```
-
-</details>
-
-<br>
-
----
-
-<div align="center">
-<h2>
-<img src="https://media.giphy.com/media/kH1DBkPNyZPOk0BxrM/giphy.gif" width="40">
-MODELS
-</h2>
-</div>
-
-<br>
-
-<div align="center">
-
-| Model | Speed | Context | Best For |
-|:------|:-----:|:-------:|:---------|
-| <img src="https://img.shields.io/badge/grok--3-purple?style=flat-square"/> | Fast | 128K | General use (default) |
-| <img src="https://img.shields.io/badge/grok--4-blue?style=flat-square"/> | Medium | 128K | Complex reasoning |
-| <img src="https://img.shields.io/badge/grok--3--mini-green?style=flat-square"/> | Fastest | 128K | Quick responses |
-
-</div>
 
 <br>
 
@@ -329,50 +413,23 @@ MODELS
 <div align="center">
 <h2>
 <img src="https://media.giphy.com/media/fwbZnTftCXVocKzfxR/giphy.gif" width="40">
-INTEGRATION
+COMPARISON
 </h2>
 </div>
 
 <br>
 
 <div align="center">
-<table>
-<tr>
-<td width="50%">
 
-<div align="center">
-<img src="https://img.shields.io/badge/CLAWDBOT-CONFIG-purple?style=for-the-badge&labelColor=000000"/>
-</div>
+| Feature | Local Heretic | xAI API | ChatGPT | Claude |
+|:--------|:-------------:|:-------:|:-------:|:------:|
+| Uncensored | 100% | ~70% | ~10% | ~15% |
+| Privacy | Full | Cloud | Cloud | Cloud |
+| Speed | Depends on HW | Fast | Fast | Fast |
+| Cost | Free | Pay per use | Pay | Pay |
+| Offline | Yes | No | No | No |
+| Real-time data | No | Yes | Paid | No |
 
-```yaml
-# ~/.clawdbot/config.yaml
-
-providers:
-  xai:
-    apiKey: ${XAI_API_KEY}
-
-model: xai/grok-3
-```
-
-</td>
-<td width="50%">
-
-<div align="center">
-<img src="https://img.shields.io/badge/SKILL-INSTALL-blue?style=for-the-badge&labelColor=000000"/>
-</div>
-
-```bash
-# Install as Clawdbot skill
-
-clawdhub install erenjugs/OpenGork
-
-# Then use in chat:
-/model xai/grok-3
-```
-
-</td>
-</tr>
-</table>
 </div>
 
 <br>
@@ -391,7 +448,7 @@ PROJECT STRUCTURE
 ```
 OpenGork/
 │
-├── gork                    # Main CLI executable (zero dependencies)
+├── gork                    # Main CLI executable
 │
 ├── src/
 │   ├── client.ts           # TypeScript API client
@@ -400,11 +457,11 @@ OpenGork/
 ├── skill/
 │   └── SKILL.md            # Clawdbot skill definition
 │
-├── package.json            # Node.js package config
-├── tsconfig.json           # TypeScript config
-├── .env.example            # Environment template
-├── LICENSE                 # MIT License
-└── README.md               # Documentation
+├── package.json
+├── tsconfig.json
+├── .env.example
+├── LICENSE
+└── README.md
 ```
 
 <br>
@@ -421,6 +478,16 @@ REQUIREMENTS
 <br>
 
 <div align="center">
+
+**For Local (Option 1):**
+
+<img src="https://img.shields.io/badge/Ollama-installed-black?style=for-the-badge&logo=ollama&logoColor=white"/>
+<img src="https://img.shields.io/badge/RAM-16GB+-black?style=for-the-badge&logo=memory&logoColor=white"/>
+<img src="https://img.shields.io/badge/Storage-30GB+-black?style=for-the-badge&logo=harddisk&logoColor=white"/>
+
+<br><br>
+
+**For xAI API (Option 2):**
 
 <img src="https://img.shields.io/badge/bash-4.0+-black?style=for-the-badge&logo=gnubash&logoColor=white"/>
 <img src="https://img.shields.io/badge/curl-any-black?style=for-the-badge&logo=curl&logoColor=white"/>
@@ -441,16 +508,17 @@ REQUIREMENTS
 
 <br>
 
-<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&duration=3000&pause=1000&color=A855F7&center=true&vCenter=true&width=600&lines=Powered+by+xAI+Grok;Built+for+OpenClaw;No+Filters+%E2%80%94+No+Limits;MIT+License" alt="Footer" />
+<img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=500&size=18&duration=3000&pause=1000&color=A855F7&center=true&vCenter=true&width=600&lines=Local+Heretic+%3D+100%25+Uncensored;xAI+API+%3D+Partial+Filtering;Choose+Your+Freedom+Level;MIT+License" alt="Footer" />
 
 <br>
 
+<a href="https://ollama.com"><img src="https://img.shields.io/badge/Ollama-000000?style=for-the-badge&logo=ollama&logoColor=white" alt="Ollama"/></a>
 <a href="https://x.ai"><img src="https://img.shields.io/badge/xAI-000000?style=for-the-badge&logo=x&logoColor=white" alt="xAI"/></a>
 <a href="https://github.com/clawdbot/clawdbot"><img src="https://img.shields.io/badge/OpenClaw-4a0080?style=for-the-badge" alt="OpenClaw"/></a>
 
 <br>
 <br>
 
-<sub>Made with precision. No compromises.</sub>
+<sub>True freedom requires local execution.</sub>
 
 </div>
