@@ -1,0 +1,23 @@
+version: '3.8'
+
+services:
+  opengork:
+    build: .
+    environment:
+      - XAI_API_KEY=${XAI_API_KEY}
+      - OLLAMA_MODEL=${OLLAMA_MODEL}
+      - OLLAMA_URL=http://ollama:11434
+    depends_on:
+      - ollama
+    stdin_open: true
+    tty: true
+
+  ollama:
+    image: ollama/ollama:latest
+    volumes:
+      - ollama_data:/root/.ollama
+    ports:
+      - "11434:11434"
+
+volumes:
+  ollama_data:
