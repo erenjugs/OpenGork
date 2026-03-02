@@ -5,14 +5,14 @@
 <br>
 <br>
 
-<a href="https://github.com/erenjugs/OpenGork/stargazers">
-  <img src="https://img.shields.io/github/stars/erenjugs/OpenGork?style=for-the-badge&logo=starship&logoColor=white&labelColor=000000&color=purple" alt="Stars">
+<a href="https://github.com/erenjugs/opengork/stargazers">
+  <img src="https://img.shields.io/github/stars/erenjugs/opengork?style=for-the-badge&logo=starship&logoColor=white&labelColor=000000&color=purple&cacheSeconds=300" alt="Stars">
 </a>
-<a href="https://github.com/erenjugs/OpenGork/network/members">
-  <img src="https://img.shields.io/github/forks/erenjugs/OpenGork?style=for-the-badge&logo=git&logoColor=white&labelColor=000000&color=blue" alt="Forks">
+<a href="https://github.com/erenjugs/opengork/network/members">
+  <img src="https://img.shields.io/github/forks/erenjugs/opengork?style=for-the-badge&logo=git&logoColor=white&labelColor=000000&color=blue&cacheSeconds=300" alt="Forks">
 </a>
-<a href="https://github.com/erenjugs/OpenGork/issues">
-  <img src="https://img.shields.io/github/issues/erenjugs/OpenGork?style=for-the-badge&logo=codeigniter&logoColor=white&labelColor=000000&color=red" alt="Issues">
+<a href="https://github.com/erenjugs/opengork/issues">
+  <img src="https://img.shields.io/github/issues/erenjugs/opengork?style=for-the-badge&logo=codeigniter&logoColor=white&labelColor=000000&color=red&cacheSeconds=300" alt="Issues">
 </a>
 <a href="LICENSE">
   <img src="https://img.shields.io/badge/LICENSE-MIT-green?style=for-the-badge&logo=opensourceinitiative&logoColor=white&labelColor=000000" alt="License">

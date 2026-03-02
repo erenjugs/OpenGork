@@ -38,12 +38,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/erenjugs/OpenGork.git"
+    "url": "git+https://github.com/erenjugs/opengork.git"
   },
   "bugs": {
-    "url": "https://github.com/erenjugs/OpenGork/issues"
+    "url": "https://github.com/erenjugs/opengork/issues"
   },
-  "homepage": "https://github.com/erenjugs/OpenGork#readme",
+  "homepage": "https://github.com/erenjugs/opengork#readme",
   "dependencies": {
     "dotenv": "^16.4.5"
   },
